@@ -4,8 +4,8 @@
   "description": "DevOpsProject2024 Action",
   "main": "js/jquery-3.6.0.min.js",
   "scripts": {
-  "test": "node js/jquery-3.6.0.min.js"
-},
+    "test": "standard && node js/jquery-3.6.0.min.js"
+  },
   "bin": {
     "coursehunters": "js/script.js"
   },
