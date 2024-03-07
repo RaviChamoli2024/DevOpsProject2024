@@ -1,0 +1,32 @@
+{
+  "name": "DevOpsProject2024",
+  "version": "0.0.7",
+  "description": "DevOpsProject2024 Action",
+  "main": "script.js",
+  "scripts": {},
+  "bin": {
+    "coursehunters": "./script.js"
+  },
+  "keywords": [
+    "download",
+    "nodejs",
+    "js"
+  ],
+  "author": "Ravinder Chamoli <ravinderchamoli777@gmail.com> (github.com/RaviChamoli2024)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/RaviChamoli2024/DevOpsProject2024.git"
+  },
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "axios": "^0.21.1",
+    "cheerio": "latest",
+    "colors": "^1.1.2",
+    "download": "^6.2.5",
+    "express": "latest",
+    "github-version-checker": "^1.2.0",
+    "request": "latest",
+    "request-progress": "^3.0.0"
+  }
+}
