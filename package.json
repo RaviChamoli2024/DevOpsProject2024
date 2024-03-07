@@ -2,10 +2,10 @@
   "name": "DevOpsProject2024",
   "version": "0.0.7",
   "description": "DevOpsProject2024 Action",
-  "main": "script.js",
+  "main": "js/script.js",
   "scripts": {},
   "bin": {
-    "coursehunters": "./script.js"
+    "coursehunters": "js/script.js"
   },
   "keywords": [
     "download",
