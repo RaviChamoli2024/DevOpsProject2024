@@ -4,11 +4,9 @@
   "description": "DevOpsProject2024 Action",
   "main": "js/script.js",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Building...\"",
+    "start": "node script.js"
   },
   "bin": {
     "coursehunters": "js/script.js"
