@@ -4,10 +4,8 @@
   "description": "DevOpsProject2024 Action",
   "main": "js/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"Building...\"",
-    "start": "node script.js"
-  },
+  "test": "node test/my-tests.js"
+},
   "bin": {
     "coursehunters": "js/script.js"
   },
