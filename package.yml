@@ -2,7 +2,7 @@
   "name": "DevOpsProject2024",
   "version": "4.0.0",
   "private": true,
-  "description": "DevOpsProject2024 action",
+  "description": "DevOpsProject2024 Action",
   "main": "css/jquery-3.6.0.min.js",
   "scripts": {
     "build": "ncc build -o dist/setup src/setup-node.ts && ncc build -o dist/cache-save src/cache-save.ts",
