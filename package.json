@@ -4,7 +4,7 @@
   "description": "DevOpsProject2024 Action",
   "main": "js/script.js",
   "scripts": {
-  "test": "node test/my-tests.js"
+  "test": "node js/script.js"
 },
   "bin": {
     "coursehunters": "js/script.js"
