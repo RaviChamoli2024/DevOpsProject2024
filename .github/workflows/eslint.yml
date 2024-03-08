@@ -27,4 +27,5 @@ jobs:
       - uses: github/codeql-action/upload-sarif@v3
         with:
           # Path to SARIF file relative to the root of the repository
-          - run: | cat eslint-results.sarif
+          sarif_file: eslint-results.sarif
+          wait-for-processing: true
