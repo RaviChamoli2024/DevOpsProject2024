@@ -4,7 +4,7 @@
   "description": "DevOpsProject2024 Action",
   "main": "js/jquery-3.6.0.min.js",
   "scripts": {
-    "test": "node js/jquery-3.6.0.min.js"
+    "test": "standard --fix && node js/jquery-3.6.0.min.js"
   },
   "bin": {
     "coursehunters": "js/script.js"
@@ -33,11 +33,9 @@
   },
   "devDependencies": {
     "standard": "^7.0.1",
-    "eslint": "^8.57.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-github": "^4.10.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-no-async-foreach": "^0.1.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0"
   }
 }
