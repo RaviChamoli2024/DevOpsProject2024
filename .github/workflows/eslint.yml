@@ -18,7 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run npm install
-        run: npm install
+        run: npm install eslint@8.10.0
+             npm install @microsoft/eslint-formatter-sarif@2.1.7
       # Runs the ESlint code analysis
       - name: Run ESLint
         # eslint exits 1 if it finds anything to report
