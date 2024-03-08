@@ -3,3 +3,4 @@ if ("cat" == "dog") {
 } else {
       const outcome = "else block";
 }
+console.log("outcome is:", outcome);
