@@ -2,9 +2,9 @@
   "name": "DevOpsProject2024",
   "version": "0.0.7",
   "description": "DevOpsProject2024 Action",
-  "main": "standard --fix && node js/jquery-3.6.0.min.js",
+  "main": "js/jquery-3.6.0.min.js",
   "scripts": {
-    "test": "node js/jquery-3.6.0.min.js"
+    "test": "standard --fix && node js/jquery-3.6.0.min.js"
   },
   "bin": {
     "coursehunters": "js/script.js"
