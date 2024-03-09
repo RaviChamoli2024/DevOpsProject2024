@@ -1,31 +1,35 @@
-name: "ESLint analysis"
+name: Lint
 
-# Run workflow each time code is pushed to your repository and on a schedule.
-# The scheduled workflow runs every Wednesday at 15:45 UTC.
 on:
+  # Trigger the workflow on push or pull request,
+  # but only for the main branch
   push:
-    branches: [ main ]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  build:
+  run-linters:
+    name: Run linters
     runs-on: ubuntu-latest
-    permissions:
-      # required for all workflows
-      security-events: write
-      # only required for workflows in private repositories
-      actions: read
-      contents: read
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Run npm install
-        run: npm install eslint@8.10.0
-        # Runs the ESlint code analysis
-      - name: Run ESLint
-        # eslint exits 1 if it finds anything to report
-        run: node_modules/.bin/eslint build docs lib script spec-main -f node_modules/@microsoft/eslint-formatter-sarif/sarif.js -o results.sarif || true
-      # Uploads results.sarif to GitHub repository using the upload-sarif action
-      - uses: github/codeql-action/upload-sarif@v3
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
         with:
-          # Path to SARIF file relative to the root of the repository
-          sarif_file: results.sarif
-    
+          node-version: 20
+
+      # ESLint and Prettier must be in `package.json`
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v2
+        with:
+          eslint: true
+          prettier: true
