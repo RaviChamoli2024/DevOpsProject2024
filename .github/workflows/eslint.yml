@@ -28,7 +28,7 @@ jobs:
       - name: Install Node.js dependencies
         run: npm install
 
-      - name: Run linters code_node/js/jquery-3.6.0.min.js
+      - name: Run linters
         uses: wearerequired/lint-action@v2
         with:
           eslint: true
